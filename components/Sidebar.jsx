@@ -22,6 +22,25 @@ const FileTextIcon = (props) => (
 const BadgeIcon = (props) => (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.78l1.21 1.22a4 4 0 0 0 5.66 0l1.21-1.22a4 4 0 0 1 4.78 4.78l-1.22 1.21a4 4 0 0 0 0 5.66l1.22 1.21a4 4 0 0 1-4.78 4.78l-1.21-1.22a4 4 0 0 0-5.66 0l-1.21 1.22a4 4 0 0 1-4.78-4.78l1.22-1.21a4 4 0 0 0 0-5.66z" /></svg>
 );
+const Mandi = (props) => (
+    <svg
+  {...props}
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="2"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+>
+  <path d="M3 9l1-4h16l1 4" />
+  <path d="M5 9v10a1 1 0 001 1h3a1 1 0 001-1V9" />
+  <path d="M10 13h4" />
+  <path d="M14 9v10a1 1 0 001 1h3a1 1 0 001-1V9" />
+</svg>
+)
 
 const Sidebar = ({ activeView, setActiveView, isOpen, setIsOpen }) => {
     const navItems = [
@@ -32,6 +51,7 @@ const Sidebar = ({ activeView, setActiveView, isOpen, setIsOpen }) => {
         { name: 'Give Rewards', icon: GiftIcon, view: 'rewards' },
         { name: 'Schemes & Loans', icon: FileTextIcon, view: 'schemes' },
         { name: 'Create Badges', icon: BadgeIcon, view: 'badges' },
+        { name:'Mandi',icon:Mandi,view:'mandi'}
     ];
 
     return (

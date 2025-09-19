@@ -10,6 +10,7 @@ import GiveRewards from '../components/GiveRewards';
 import SchemesAndLoans from '../components/SchemesAndLoans';
 import CreateBadges from '../components/CreateBadges';
 import LoadingScreen from '../components/LoadingScreen';
+import MandiPage from '../components/mandi';
 
 // --- SVG Icon for the Menu Button ---
 const HamburgerIcon = (props) => (
@@ -38,6 +39,7 @@ const AdminPage = () => {
             case 'rewards': return <GiveRewards />;
             case 'schemes': return <SchemesAndLoans />;
             case 'badges': return <CreateBadges />;
+            case 'mandi':return <MandiPage/>;
             default: return <DashboardHome />;
         }
     };
